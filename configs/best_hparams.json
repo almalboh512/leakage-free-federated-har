@@ -1,0 +1,12 @@
+{
+  "uci": {
+    "central": {"lr": 0.0003, "wd": 0.01, "bs": 64, "hid": 128, "layers": 1, "drop": 0.3, "in_drop": 0.5, "ch": 32, "ks": 9},
+    "fedavg": {"local_epochs": 3},
+    "fedprox": {"local_epochs": 3, "mu": 0.01}
+  },
+  "ucf": {
+    "central": {"lr": 0.001, "wd": 0.01, "bs": 32, "hid": 128, "layers": 1, "drop": 0.5, "in_drop": 0.5},
+    "fedavg": {"local_epochs": 2},
+    "fedprox": {"local_epochs": 2, "mu": 0.01}
+  }
+}
